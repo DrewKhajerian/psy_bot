@@ -1,5 +1,12 @@
 body {
-	background-color: light blue;
+	background-image: url('concert-stage.jpg');
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+h1 {
+	text-align: center;
+	color: blue;
 }
 
 img {
