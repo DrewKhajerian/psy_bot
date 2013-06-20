@@ -1,7 +1,16 @@
+body {
+	background-color: light blue;
+}
+
 img {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 167px;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 167px;
+}
+
+audio {
+	block: inline;
+	display:none;
 }
