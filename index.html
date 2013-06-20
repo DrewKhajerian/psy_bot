@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>PSY BOT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+	<body>
+		<h1>PSYBORG GANGNAM STYLE!</h1>
+
+		<!-- <input><button id="left"></button></input> -->
+		<img src="http://www.tommoody.us/images/dec12/dumpfm-qil-logo_dancing_psy-vflsJl9hCresize_depop.gif">
+
+
+
+		<script>
+			// start jquerey
+
+			$(document).ready(function() {
+		    $(document).keydown(function(key) {
+		        switch(parseInt(key.which, 10)) {
+					case 65: //left 'a'
+						$('img').animate({left: "-=50px"}, 5);
+						$.ajax({url: "http://127.0.0.1:8071/motion-control/update", data: {strafe: -1}, datatype: "jsonp"});
+						break;
+					case 83: //down 's'
+						$('img').animate({top: "+=50px"}, 5);
+						$.ajax({url: "http://127.0.0.1:8071/motion-control/update", data: {forward: -1}, datatype: "jsonp"});
+						break;
+					case 87: //up 'w'
+						$('img').animate({top: "-=50px"}, 5);
+						$.ajax({url: "http://127.0.0.1:8071/motion-control/update", data: {forward: 1}, datatype: "jsonp"});
+						break;
+					case 68: //right 'd'
+						$('img').animate({left: "+=50px"}, 5);
+						$.ajax({url: "http://127.0.0.1:8071/motion-control/update", data: {strafe: 1}, datatype: "jsonp"});
+						break;
+					default:
+						break;
+					}
+				});
+			});
+
+
+		</script>
+
+
+	</body>
+</hmtl>
