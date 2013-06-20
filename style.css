@@ -4,18 +4,20 @@ body {
 	background-size: auto;
 }
 
+
 h1 {
 	text-align: center;
 	color: blue;
 }
 
 img {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100px;
-  height: 167px;
-}
+    display: block;
+    margin: auto;
+    text-align: center;
+    position:relative;
+    width: 100px;
+  	height: 167px;
+ }
 
 audio {
 	block: inline;
