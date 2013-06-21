@@ -36,6 +36,7 @@ $(document).ready(function() {
 				$('body').append(banana);
 				$('body').append(banana);
 				$('body').append(banana);
+				$('body').append(banana);
 			 	break;
 			default:
 				break;
